@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  height: 10vh;
+  background: #2155ce;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 4vh;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+  padding: 4vh 0 0 10vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-container {
   display: flex;
   flex-direction: column;
+  width: 12vw;
+  height: 15vh;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+:is(.search-container input[type=text], .count input[type=number], :is(.count, .item) button) {
+  border-color: #2155ce;
+  outline: none;
+  height: 4vh;
+  padding: 0 0 0 1vh;
+  border-radius: 5px;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+}
+
+.left {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.fruit {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #cfc9ae;
+  padding: 3vh;
+  border-radius: 8px;
+  border: 2px solid #2155ce;
+  margin: 0 0 3vh 0;
+}
+
+.fruit img {
+  height: 10vh;
+  width: 5vw;
+}
+
+.detail h4 {
+  font-weight: 400;
+}
+
+.right {
+  width: 47%;
+}
+
+.item {
+  padding: 4vh 0 0 16vh;
+  width: 19vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+}
+
+:is(.count, .item) button {
+  width: 2vw;
+  text-align: start;
+  background: #2155ce;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
